@@ -1,0 +1,4 @@
+#Tue Jan 15 01:40:51 BDT 2019
+base.0=E\:\\Thesis Work\\DasBabu\\picsecret\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

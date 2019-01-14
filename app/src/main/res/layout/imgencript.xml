@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_decrypt"
+    >
+
+    <Button
+        android:id="@+id/encrypt_browse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:text="Browse File" />
+
+    <ImageView
+        android:id="@+id/enc_brows_image"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/encrypt_browse_btn"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/enc_img_name"
+        android:background="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enc_brows_image"
+        android:layout_marginTop="10dp"
+        android:text="Encrypted Image Name"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/enc_txtcode_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enc_img_name"
+        android:layout_marginTop="15dp"
+        android:background="#FFFF"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/enc_savecode_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/enc_txtcode_edt"
+        android:background="@drawable/button1"
+        android:textColor="@android:color/background_light"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Save Code" />
+
+    <Button
+        android:id="@+id/enc_sending_btn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enc_savecode_btn"
+        android:layout_alignBottom="@+id/enc_savecode_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button1"
+        android:text="Send Image" />
+
+</RelativeLayout>
